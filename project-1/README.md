@@ -1,11 +1,9 @@
-<img src="http://imgur.com/1ZcRyrc.png" style="float: left; margin: 20px; height: 60px">
-
 # Project 1: Standardized Test Analysis (ACT or SAT)
 
 <br>
 
 ## Contents
----
+
 - [Problem Statement](#Problem-Statement)
 - [Datasets](#Datasets)
 - [Data Dictionary](#Data-Dictionary)
@@ -14,13 +12,11 @@
 
 
 ## Problem Statement
----
 
 Pursuing higher education is probably one of the toughest moments in life, especially when the made decision can greatly dictate the student's future. While many high school students have a clear aim of their aspired colleges, some struggle even to choose between the ACT or SAT for their applications. This data-centric study is carried out to explore students' performances by state on each standardized test, and tries to provide an elementary guideline whether a typical average student should focus on the ACT or SAT.
 
 
 ## Datasets
----
 
 Out of the 10 datasets included in the [`data`](../data/) folder, 6 are used in this project along with 2 additional datasets from external sources. 
 
@@ -60,7 +56,6 @@ Out of the 10 datasets included in the [`data`](../data/) folder, 6 are used in 
 
 
 ## Data Dictionary
----
 
 ### `scores` DataFrame
 
@@ -77,7 +72,6 @@ Out of the 10 datasets included in the [`data`](../data/) folder, 6 are used in 
 
 
 ## Analysis & Interpretation
----
 
 1. The ACT and SAT scores are based on different scales and hence, cannot be directly compared. We need to transform them into percentiles, which have the common range of 0 to 100. Below are the official score to percentile transformation tables from the ACT and SAT respectively
 
@@ -90,7 +84,7 @@ source : <a href="https://www.act.org/content/dam/act/unsecured/documents/Multip
 
 source : <a href="https://blog.prepscholar.com/historical-percentiles-new-sat">https://blog.prepscholar.com/historical-percentiles-new-sat</a>
 
-2. Two test score percentiles distinctly differ across different geographical areas.
+2. The ACT and SAT score percentiles distinctly differ across different geographical areas.
 
 <img src="./images/percentiles-by-state.png" height="360">
 
@@ -113,6 +107,5 @@ participation rate * score percentile / 100
 <img src="./images/recommended-tests.png" height="360">
 
 ## Conclusions & Recommendations
----
 
-After the normalization of the score percentiles, the exploratory data analysis has found that students in the mainland states perform the best overall in the ACT, whereas the coastal states have the higher overall scores on the SAT. Unless students are required by their states to take one of the two tests, they are advised to take the test in which students in their states perform best overall. Apart from a higher probability to score a higher percentile, it could be suggested that learning environments and resources in that state such as schools, tuition institutions, and mock test materials are more suitable, accessible, and ready to assist students to achieve a higher score on that test. As a general rule of thumb, students in the mainland states are recommended to take the ACT and students in the coastal regions are recommended to take the SAT.
+After the normalization of score percentiles, the study has found that students in the mainland states perform the best overall in the ACT, whereas the coastal states have the higher overall scores on the SAT. Unless students are required by their states to take one of the two tests, they are advised to take the test in which students in their states perform best overall. Apart from a higher probability to score a higher percentile, it could be suggested that learning environments and resources in that state such as schools, tuition institutions, and mock test materials are more suitable, accessible, and ready to assist students to achieve a higher score on that test. As a general rule of thumb, students in the mainland states are recommended to take the ACT and students in the coastal regions are recommended to take the SAT.
